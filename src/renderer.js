@@ -21,10 +21,10 @@ const ReglRenderer = ReactFiberReconciler({
     internalInstanceHandle,
   ) {
     if(type === 'Draw'){
-      return new DrawNode(props, hostContext.regl);
+      return new DrawNode(props, hostContext.regl, rootContainerInstance);
     }
 
-    return new Node(props, hostContext.regl);
+    return new Node(props, hostContext.regl, rootContainerInstance);
   },
 
   mutation: {

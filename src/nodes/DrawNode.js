@@ -81,9 +81,10 @@ function topLevelKeyReducer(reactProps, regl, reglDefinition, topLevelDefinition
 
 
 export default class DrawNode extends Node {
-  constructor(props, regl){
+  constructor(props, regl, rootNode){
     super(props, regl);
     this.regl = regl;
+    this.root = rootNode;
     this.setDrawState(props,regl);
   }
 
@@ -138,8 +139,11 @@ export default class DrawNode extends Node {
           this.executionProps.attributes[newAttributeKey](newProps.attributes[newAttributeKey]);
         }
       })
-
     }
+
+
+    // if props were updated
+    this.root.render();
   }
 
   setDrawState(props, regl){

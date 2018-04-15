@@ -31,15 +31,17 @@ const drawNode = (node) => {
 };
 
 export default class ReglRootNode extends Node {
-  constructor(reglRef, context){
+  constructor(reglRef, context, clearFn){
     super(reglRef);
-    this.regl = reglRef
+    this.regl = reglRef;
+    this.clearFn = clearFn;
     if(context.store){
       this.store = store;
     }
   }
 
   render(){
+    this.clearFn();
     drawNode(this);
   }
 }
