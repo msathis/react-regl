@@ -137,6 +137,7 @@ var Regl = function (_React$Component) {
             }
 
             return _react2.default.createElement("canvas", {
+                style: this.props.style,
                 ref: function ref(_ref) {
                     return _this3.canvas = _ref;
                 },

@@ -102,6 +102,7 @@ export default class Regl extends React.Component {
 
         return (
             <canvas
+                style={this.props.style}
                 ref={ref => (this.canvas = ref)}
                 width={this.props.width}
                 height={this.props.height}
