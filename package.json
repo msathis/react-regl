@@ -1,72 +1,63 @@
 {
-  "name": "react-regl",
-  "version": "2.1.0",
-  "description": "A custom React Fiber reconciler renderer for regl webGL",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "directories": {
-    "example": "example"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kevzettler/react-regl.git"
-  },
-  "keywords": [
-    "WebGL",
-    "regl",
-    "react",
-    "GLSL",
-    "glslify",
-    "scene",
-    "graph"
-  ],
-  "author": "kevzettler",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kevzettler/react-regl/issues"
-  },
-  "homepage": "https://github.com/kevzettler/react-regl#readme",
-  "scripts": {
-    "build": "NODE_ENV=production babel src -d dist",
-    "watch": "NODE_ENV=production babel src --watch -d dist",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "prebuild": "rm -rf ./dist",
-    "storybook": "./node_modules/.bin/start-storybook -p 6006",
-    "build-storybook": "./node_modules/.bin/build-storybook --output-dir ./docs"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.0",
-    "react-reconciler": "0.9.0",
-    "regl": "^1.3.0"
-  },
-  "peerDependencies": {
-    "react": "^16.1.1"
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^3.2.16",
-    "@storybook/addon-info": "^3.2.16",
-    "@storybook/addon-knobs": "^3.2.16",
-    "@storybook/addon-links": "^3.2.16",
-    "@storybook/addon-options": "^3.2.16",
-    "@storybook/cli": "^3.2.17",
-    "@storybook/react": "^3.2.16",
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-eslint": "^8.0.3",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "gl": "^4.0.4",
-    "gl-context": "^0.1.1",
-    "jest": "^22.4.3",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1"
-  }
+    "name": "react-regl",
+    "version": "2.1.0",
+    "description": "A custom React Fiber reconciler renderer for regl webGL",
+    "main": "src/index.js",
+    "files": ["dist"],
+    "directories": {
+        "example": "example"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kevzettler/react-regl.git"
+    },
+    "keywords": ["WebGL", "regl", "react", "GLSL", "glslify", "scene", "graph"],
+    "author": "kevzettler",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kevzettler/react-regl/issues"
+    },
+    "homepage": "https://github.com/kevzettler/react-regl#readme",
+    "scripts": {
+        "build": "NODE_ENV=production babel src -d dist",
+        "watch": "NODE_ENV=production babel src --watch -d dist",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "prebuild": "rm -rf ./dist",
+        "storybook": "./node_modules/.bin/start-storybook -p 6006",
+        "build-storybook":
+            "./node_modules/.bin/build-storybook --output-dir ./docs"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "dependencies": {
+        "prop-types": "^15.6.0",
+        "react-reconciler": "0.9.0",
+        "regl": "^1.3.0"
+    },
+    "peerDependencies": {
+        "react": "^16.1.1"
+    },
+    "devDependencies": {
+        "@storybook/addon-actions": "^3.2.16",
+        "@storybook/addon-info": "^3.2.16",
+        "@storybook/addon-knobs": "^3.2.16",
+        "@storybook/addon-links": "^3.2.16",
+        "@storybook/addon-options": "^3.2.16",
+        "@storybook/cli": "^3.2.17",
+        "@storybook/react": "^3.2.16",
+        "babel-cli": "^6.24.1",
+        "babel-core": "^6.25.0",
+        "babel-eslint": "^8.0.3",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "gl": "^4.0.4",
+        "gl-context": "^0.1.1",
+        "jest": "^22.4.3",
+        "react": "^16.1.1",
+        "react-dom": "^16.1.1"
+    }
 }
