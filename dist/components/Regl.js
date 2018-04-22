@@ -70,7 +70,7 @@ var Regl = function (_React$Component) {
 
             var canvasRef = this.props.canvas || this.canvas;
             var gl = canvasRef.getContext("webgl", {
-                alpha: false,
+                alpha: true,
                 antialias: false,
                 stencil: false,
                 preserveDrawingBuffer: false

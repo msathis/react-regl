@@ -27,7 +27,7 @@ export default class Regl extends React.Component {
     componentDidMount() {
         const canvasRef = this.props.canvas || this.canvas;
         const gl = canvasRef.getContext("webgl", {
-            alpha: false,
+            alpha: true,
             antialias: false,
             stencil: false,
             preserveDrawingBuffer: false
