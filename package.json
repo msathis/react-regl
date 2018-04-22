@@ -2,7 +2,7 @@
     "name": "react-regl",
     "version": "2.1.0",
     "description": "A custom React Fiber reconciler renderer for regl webGL",
-    "main": "src/index.js",
+    "main": "dist/index.js",
     "files": ["dist"],
     "directories": {
         "example": "example"
